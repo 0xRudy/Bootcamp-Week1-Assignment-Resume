@@ -1,4 +1,10 @@
 /* Add a black background color to the top navigation */
+ img {
+  width:200px;
+  height:200px;
+  border-radius: 100px;
+  }
+
 .topnav {
     overflow: hidden;
   }
