@@ -1,3 +1,8 @@
+* {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+}
+
 header {
   margin: 10px auto;
 }
@@ -7,7 +12,7 @@ header {
   background-color: transparent;
   display: flex;
   justify-content: center;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
 }
 
 /* Style the links inside the navigation bar */
@@ -19,7 +24,7 @@ header {
   /* background-color: #333; */
   /* transition: all .35s; */
   width: 200px;
-  transition: width 0.5s;
+  transition: width 1s;
   text-align: center;
 }
 
@@ -58,4 +63,56 @@ img {
 
 .intro {
   text-align: center;
+}
+
+header .navOpenBtn, .topnav .navCloseBtn {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  header .navOpenBtn, .topnav .navCloseBtn {
+    display: block;
+  }
+
+  .topnav {
+    position:fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    max-width: 250px;
+    width: 100%;
+    padding-top: 100px;
+    row-gap: 30px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+  }
+
+  .openNav .topnav {
+    left: 0;
+
+  }
+
+  .topnav .navCloseBtn {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  header .navOpenBtn {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+
 }
