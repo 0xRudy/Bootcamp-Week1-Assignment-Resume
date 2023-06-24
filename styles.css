@@ -11,12 +11,20 @@ header {
   margin: 10px auto;
 }
 
+main {
+  /* height: 1500px; */
+  margin-top: 70px;
+}
+
 .topnav {
   overflow: hidden;
-  background-color: transparent;
+  background-color: white;
   display: flex;
   justify-content: center;
   font-weight: bold;
+  top: 0;
+  position: fixed;
+  padding: 10px;
 }
 
 /* Style the links inside the navigation bar */
@@ -117,6 +125,14 @@ header .navOpenBtn, .topnav .navCloseBtn {
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
+    width: fit-content;
+    position: fixed;
+    top: 0;
+    margin-top: 10px;
+  }
+
+  main {
+    margin-top: 40px;
   }
 
 }
